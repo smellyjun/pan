@@ -1,7 +1,7 @@
 ---
 title: 总结的markdown知识点
 ---
-[此为源码](https://github.com/smellyjun/code/what_is_markdown.md)
+[此为源码](https://github.com/smellyjun/pan/blob/main/code/what_is_markdown.md)
 
 # 总结的markdown知识点（一级标题）
 
