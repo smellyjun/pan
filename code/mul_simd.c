@@ -22,7 +22,7 @@ gcc -g multiply_simd.c -o multiply_simd
 #include <time.h>
 #include <stdio.h>
 #include <sys/time.h>
-//#include <arm_neon.h>
+#include <arm_neon.h>
 
 #define N    120
 #define SEED    0x1234
@@ -125,7 +125,7 @@ void multiply_neon(void)
 void print_data(void)
 {
     // print first 2 and last 2 element.
-    printf("%f, %f, %f, %f\n", g_c[0][0], g_c[1][0], g_c[N - 2][0], g_c[N - 1][0]);
+    printf("%f, %f, %f, %f\n", g_c[0][0], g_c[0][1], g_c[N - 1][N -2], g_c[N - 1][N - 1]);
 }
 
 int main(void)
